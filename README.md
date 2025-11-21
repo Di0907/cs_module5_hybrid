@@ -70,9 +70,6 @@ cs_module5_hybrid/
                                 → Generated embeddings for FAISS search
 ```
 
-
-
-
 ---
 ## 📝 Questions
 _No additional questions for this homework._
@@ -84,3 +81,9 @@ _No additional questions for this homework._
 - Results are reproducible directly by running the notebook.  
 
 - Evaluation matches expected accuracy from the Week 5 instructions.
+
+
+Branch: hw5 (for TA review)
+
+
+
