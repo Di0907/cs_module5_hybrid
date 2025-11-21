@@ -45,36 +45,36 @@ Formula:
 - Reports hit-rate@5 for 5 test queries  
 - All versions reach **1.00 (5/5)** accuracy
 
+---
+## 👤 Primary Reviewer: ScottLL
+---
+
 
 ## 📂 Project Structure
+
+```
 cs_module5_hybrid/
 │
-├── module5_hybrid.ipynb
-│   Jupyter notebook containing all code for Week 5:
-│   - Loading Week 4 chunks
-│   - Local embedding generation (SentenceTransformer)
-│   - FAISS vector search
-│   - BM25 inverted index search
-│   - Hybrid search (vector + BM25)
-│   - Evaluation and hit-rate results
+├── module5_hybrid.ipynb       → Week 5 full code
+│   ├── Embedding generation (SentenceTransformers)
+│   ├── FAISS vector search
+│   ├── BM25 inverted index
+│   ├── Hybrid search
+│   └── Evaluation
 │
-├── README.md
-│   Assignment description, project overview, usage instructions,
-│   reviewer information, and questions for TA.
+├── README.md                  → Description, usage, reviewer info
 │
 └── data_cscl/
-    ├── chunks.json
-    │   JSON file produced in Week 4; contains all text chunks used for
-    │   vector embeddings, BM25 search, and hybrid retrieval.
-    │
+    ├── chunks.json            → Week 4 text chunks
     └── embeddings_text3_small.npy
-        Local embedding matrix generated in this assignment using
-        `sentence-transformers/all-MiniLM-L6-v2`. Required for FAISS index
-        and vector search reproduction.
+                                → Generated embeddings for FAISS search
+```
+
+
 
 
 ---
-## 📝 Questions (Optional)
+## 📝 Questions
 _No additional questions for this homework._
 
 ---
@@ -82,4 +82,5 @@ _No additional questions for this homework._
 ## ✅ Submission Notes
 - All required outputs (embeddings, FAISS index, SQLite DB) are included.  
 - Results are reproducible directly by running the notebook.  
+
 - Evaluation matches expected accuracy from the Week 5 instructions.
